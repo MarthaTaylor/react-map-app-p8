@@ -1,5 +1,23 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Dependencies
+Packages
+*Create-react-app
+*Material IO
+*API
+*Google Maps API
+*Foursquare API
+Design
+Customized designed made by me using the following tools
+
+Hatchful Logos
+Freepik
+Google Fonts
+*Material IO
+Adobe XD
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:

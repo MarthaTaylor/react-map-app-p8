@@ -17,27 +17,29 @@ componentDidMount(){
 }
 
   loadMap = () => {
-      load_JS_script("https://maps.googleapis.com/maps/api/js?key=AIzaSyBI2NsfPB7PeL1AAyX1od84K3_nAhht5TA&callback=initMap")
+      load_JS_script("https://maps.googleapis.com/maps/api/js?key=AOI-KEY-GOES-HERE=initMap")
       window.initMap = this.initMap
   }
+    
+
 
  // function with api data to start working with axios 
 getVenues = () => {
   let endPoint = "https://api.foursquare.com/v2/venues/explore?"
   let parameters ={
-                  client_id: "MAJNLNVIYQ5MUARVEBF3QSVXYBSRHQ4Z0VSCQL2W2O5ANCGN",
-                  client_secret: "RKEONVPNYRLKVGRSZOFJ41JPPGTX4T2CB0IFNZOH002RRPVG",
-                  query: "food",
-                  near: "Sydney",
+                  client_id: "",
+                  client_secret: "",
+                  query: "nut free food",
+                  near: 'Miami',
                   v: "20190225"                  
   }
 
   axios.get(endPoint + new URLSearchParams(parameters))
   .then(response => {
     this.setState({
-      venues: response.data.response.groups[0].items
+      venues: response.data.response.groups[0].items, 
     }, this.loadMap())
-    //console.log(response.data.response.groups[0].items)
+    console.log(response.data.response.groups[0].items)
   })
   .catch(error =>{
     console.log("Error " + error)
@@ -47,8 +49,8 @@ getVenues = () => {
  initMap = () => {
     //create a map
     let map = new window.google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8
+        center: {lat: 25.761681, lng: -80.191788},
+        zoom: 12
       })
 
     // creatng an info window that will ensure just one is open at a time
@@ -57,8 +59,10 @@ getVenues = () => {
       // display dynamic markers
       this.state.venues.map( bestVenue =>  {
 
-      let contentString = `${bestVenue.venue.name}`;
-
+      let contentString = 
+      `<h1>${bestVenue.venue.name} </h1> <br/>,<h2> ${bestVenue.venue.categories[0].name}</h2>
+      <h3> <br/>,<h2> ${bestVenue.venue.location.address} </h2>`;
+      //**style in font size and another detail
       // creating a marker
       let marker = new window.google.maps.Marker({
         position: {lat: bestVenue.venue.location.lat, lng: bestVenue.venue.location.lng},
