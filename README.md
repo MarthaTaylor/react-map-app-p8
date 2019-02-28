@@ -4,7 +4,7 @@
 
 - [Project Overview](#ProjectOverview)
 - [Dependencies and Built With](#DependenciesAndBuiltWith)
-- [Installation and running the project:](#InstallationAndRunningTheProject:)
+- [Installation and running the project](#InstallationAndRunningTheProject)
 - [Udacity shares extra app info](#UdacitySharesExtraAppInfo)
 - [Credits and External Code Used in this Project](#ExternalCodeUsedinthisProject)
 - [Contributing](#contributing)
@@ -30,7 +30,7 @@ Design
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
-## Installation and running the project:
+## Installation and running the project
 
 1. You can either Zip-Download: Download the repository as a zip-file, extract it, use Git Bash to change into the project directory or
 2. Clone the Repository: Clone the repository with Git Bash to a directory of your choice: use ```git clone``` and the url to this repo for example https://github.com/MarthaTaylor/react-map-app-p8 , to double check the url just navigate to the green clone button on the repo choose https and copy the url to use with git clone from within the clone button
