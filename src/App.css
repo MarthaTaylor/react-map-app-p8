@@ -34,9 +34,102 @@
 
 #map {
   height: 80vh;
+  width:70%;
+  margin-left: 35%
+  
 }
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+
+
+/*Side bar and filter**/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#sidebar {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  background-color: gold;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.art-lyon {
+  margin-left: 40px;
+}
+
+.credits {
+  margin-left: 40px;
+}
+
+.location-list-item {
+  list-style: none outside;
+  font-size: 1.3rem;
+  margin-right: 30px;
+  /*display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;*/
+}
+
+.search-locations {
+  margin: 15px 40px 0px 40px;
+  height: 30px;
+  width: 75%;
+  padding: 10px 10px 10px 30px;
+  font-size: 1.2rem;
+}
+
+.sidebar-button {
+  height: 25px;
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+/**
+ * Make site responsive to *very* small phones
+ */
+@media screen and (max-width: 350px){
+
+  #search {
+    width: 300px;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+}
+
+
+/*
+ * Make site responsive to small phones
+ */
+@media screen and (max-width: 400px){
+
+  #search {
+    width: 360px;
+  }
+}
+
+/*
+ * Make site responsive to phones
+ */
+@media screen and (min-width: 401px) and (max-width: 600px){
+
+}
+
+/*
+ * Make site responsive to tablets
+ */
+@media screen and (min-width: 601px) and (max-width: 800px){
+
 }
