@@ -41,7 +41,7 @@ start the development server with npm start
 
 
 
-## Udacity shares extra app info
+## Udacity shares extra app information
 
 The folloing pieces of text and infomation have been provided by Udacity:
 
@@ -84,7 +84,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-* ode Splitting
+* Code Splitting
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
@@ -108,7 +108,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-## CreditsExternal Code Used in this Project
+## Credits AND External Code Used in this Project
 
 Some Code reused or bits adapted from the following sources:
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
@@ -129,3 +129,7 @@ For details, look at the file in his repo called [CONTRIBUTING.md](CONTRIBUTING.
 (c) Martha Taylor 2018.
 
 This repository is licensed under the [MIT license](https://choosealicense.com/licenses/mit/#). For further information see the [LICENSE.txt](LICENSE.txt) file in this project repository.
+
+## Author
+
+Martha Taylor

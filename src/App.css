@@ -74,11 +74,9 @@ html, body {
 
 .location-list-item {
   list-style: none outside;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-right: 30px;
-  /*display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;*/
+
 }
 
 .search-locations {
@@ -96,12 +94,12 @@ html, body {
 }
 
 /**
- * Make site responsive to *very* small phones
+ * Make site responsive to tiny phone
  */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 400px){
 
   #search {
-    width: 300px;
+    width: 400px;
   }
 
   body {
